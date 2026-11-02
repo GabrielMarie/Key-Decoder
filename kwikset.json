@@ -1,0 +1,62 @@
+{
+  "variables_utiles": {
+    "_aide": {
+      "nom_calque": "Texte : nom du PNG sans extension. Exemple : Kwikset_reference. Le fichier sera cree dans le dossier du JSON.",
+      "pixels_par_pouce": "Nombre strictement positif : echelle du dessin.",
+      "longueur_lignes_pouces": "Nombre strictement positif : longueur commune des lignes horizontales, sans position depuis un epaulement.",
+      "hauteurs_depuis_dos_pouces": "Objet : etiquette entre guillemets et hauteur numerique en pouces. Utiliser un point decimal. Valeurs reprises de votre image Kwikset."
+    },
+    "nom_calque": "Kwikset",
+    "pixels_par_pouce": 1000,
+    "longueur_lignes_pouces": 1.3,
+    "hauteurs_depuis_dos_pouces": {
+      "1": 0.329,
+      "2": 0.306,
+      "3": 0.283,
+      "4": 0.26,
+      "5": 0.237,
+      "6": 0.214,
+      "7": 0.191
+    }
+  },
+  "variables_esthetiques": {
+    "_aide": {
+      "couleurs": "Listes de 4 entiers entre 0 et 255 : rouge, vert, bleu, opacite. 0 = transparent ; 255 = opaque.",
+      "dimensions": "Marges et epaisseur : entiers en pixels. Epaisseur >= 1, marges >= 0. Decalages : entiers signes autorises.",
+      "afficher_dos": "Booleen JSON : true ou false. Ajoute une ligne de reference y = 0.",
+      "texte_dos": "Texte affiche sous la reference du dos.",
+      "police": "fichier : null pour la police integree ou chemin TTF relatif au JSON ; taille_px : entier >= 1.",
+      "etiquettes": "afficher_valeurs : true ou false ; format_etiquette : texte avec {nom} et/ou {hauteur}. Exemple : {nom}  {hauteur:.3f} in.",
+      "marges": "Augmenter marge_droite_px pour les etiquettes longues. Le texte depassant le cadre sera coupe."
+    },
+    "couleur_rgba": [
+      0,
+      0,
+      0,
+      210
+    ],
+    "fond_rgba": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "epaisseur_px": 2,
+    "marge_gauche_px": 60,
+    "marge_droite_px": 180,
+    "marge_haut_px": 60,
+    "marge_bas_px": 60,
+    "afficher_dos": true,
+    "texte_dos": "DOS : y = 0",
+    "dos_texte_dx_px": 0,
+    "dos_texte_dy_px": 20,
+    "afficher_valeurs": true,
+    "format_etiquette": "{nom}  {hauteur:.3f} in",
+    "etiquette_dx_px": 10,
+    "etiquette_dy_px": -6,
+    "police": {
+      "fichier": null,
+      "taille_px": 12
+    }
+  }
+}
