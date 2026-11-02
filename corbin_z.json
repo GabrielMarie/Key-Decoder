@@ -1,0 +1,78 @@
+{
+  "_aide": {
+    "utilisation": "Modifier ce fichier, puis lancer python generer_calque.py. Le JSON doit se trouver dans le meme dossier que le script.",
+    "nombres": "Utiliser un point decimal (0.406), pas une virgule. Ne pas mettre les nombres entre guillemets.",
+    "unites": "Les positions, hauteurs et longueur_reference sont en pouces. Les autres dimensions sont en pixels.",
+    "sortie": "destination : texte, chemin du fichier PNG. Les chemins relatifs partent du dossier du JSON.",
+    "dimensions": "pixels_par_pouce : nombre positif ; marge_px : entier >= 0 ; longueur_reference : nombre >= 0 ; epaisseur_px : entier >= 1.",
+    "positions_depuis_epaulement": "Liste non vide de nombres >= 0, en pouces. L ordre determine la numerotation.",
+    "hauteurs_depuis_dos": "Objet non vide : nom du niveau entre guillemets, puis hauteur numerique >= 0 en pouces.",
+    "couleurs": "couleur et fond_rgba : listes de 4 entiers de 0 a 255 : rouge, vert, bleu, opacite. Opacite 0 = transparent ; 255 = opaque.",
+    "mise_en_page": "supplement_largeur_px et supplement_hauteur_px : entiers >= 0 ; autres valeurs : decalages entiers en pixels, signes acceptes.",
+    "textes": "Textes entre guillemets. Dans format_station, {numero} sera remplace par le numero (1, 2, ...).",
+    "police": "fichier : null pour la police integree, sinon chemin vers un fichier TTF ; taille_px : entier >= 1.",
+    "notes": "Les cles _aide sont ignorees par le dessin. Augmenter les marges et supplements si les textes sont coupes."
+  },
+  "destination": "mon_calque.png",
+  "pixels_par_pouce": 1000,
+  "marge_px": 60,
+  "longueur_reference": 1.3,
+  "positions_depuis_epaulement": [
+    0.406,
+    0.562,
+    0.718,
+    0.874,
+    1.03,
+    1.186
+  ],
+  "hauteurs_depuis_dos": {
+    "1": 0.339,
+    "2": 0.325,
+    "3": 0.311,
+    "4": 0.297,
+    "5": 0.283,
+    "6": 0.269,
+    "7": 0.255,
+    "8": 0.241,
+    "9": 0.227,
+    "0": 0.213
+  },
+  "couleur": [
+    0,
+    0,
+    0,
+    210
+  ],
+  "fond_rgba": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "epaisseur_px": 2,
+  "police": {
+    "fichier": null,
+    "taille_px": 10
+  },
+  "textes": {
+    "dos": "DOS : y = 0",
+    "epaulement": "EPAULEMENT : x = 0",
+    "format_station": "{numero}"
+  },
+  "mise_en_page": {
+    "supplement_largeur_px": 100,
+    "supplement_hauteur_px": 50,
+    "dos_texte_dx_px": 0,
+    "dos_texte_dy_px": 25,
+    "epaulement_haut_dy_px": -15,
+    "epaulement_bas_dy_px": 15,
+    "epaulement_texte_dx_px": 5,
+    "epaulement_texte_dy_px": -30,
+    "station_haut_dy_px": -10,
+    "station_bas_dy_px": 12,
+    "station_texte_dx_px": -4,
+    "station_texte_dy_px": 15,
+    "niveau_texte_dx_px": 8,
+    "niveau_texte_dy_px": -5
+  }
+}
